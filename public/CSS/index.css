@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 100vh
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.firsthalf{
+    float: left;
+    width: 50%;
+    height: 100vh;
+    background: black;
+}
+.firsthalf .header{
+    font-size: larger;
+    font-weight: 100;
+    color: white;
+    margin-left:2%;
+    font-family: 'Pacifico', cursive;
+    cursor: pointer;
+    user-select: none;
+    width: fit-content;
+    
+} 
+
+.firsthalf .header:hover{
+    color: rgb(39, 124, 163);
+}
+
+.ml12 {
+    font-weight: 200;
+    font-size: 1.8em;
+    margin-top: 50%;
+    margin-left:5%;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.3em;
+    color: white;
+    font-family: 'Pacifico', cursive;
+  }
+  
+  .ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  .ml3 {
+      margin-left: 5%;
+      margin-top: 50%;
+    font-weight: 500;
+    font-size: 2em;
+    color: white;
+    font-family: 'Pacifico', cursive;
+  }
+
+.secondhalf{
+   
+    width: 50%;
+    height: 100vh;
+    float:left;
+    background-color: rgb(39, 124, 163);
+    color: black;
+   
+   
+}
+
+nav {
+    float: right;
+    color: black;
+}
+  
+
+li {
+    display: block;
+    /* margin: 0px 0px 0px 0px; */
+    margin: 2rem auto;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    padding: 2rem 0px 0px 0px;
+    font-family: 'Press Start 2P', cursive;
+    color: black;
+  }
+
+.secondhalf .navbar nav li a:link{
+    text-decoration:none;
+    color: rgb(82, 4, 155);
+
+}
+.secondhalf .navbar nav ul li a:hover{
+    background-color: white;    
+    color: black;
+    transition: 0.3s ease-in;
+
+}
+
+
+.secondhalf .image{
+    width: 350px;
+    min-height:80vh;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    justify-content: center;
+    align-items: center;
+    background: url('/images/dabi2.jpg');
+    background-repeat:no-repeat;
+    background-position-x:30% ;
+    background-position-y:10% ;
+   
+    opacity: 0.8;
+    border-radius: 15%;
+    box-shadow: 0px 20px 50px rgba(212, 8, 8, 0.5), 0px 0px 50px rgba(195, 14, 219, 0.5);
+}
+
+
+
+
+
+@media only screen and (max-width:800px) {
+
+        body{
+            background: url('/images/dabi.jpg');
+            background-repeat: no-repeat;
+            background-position-x:80% ;
+            background-size:cover ;
+        }   
+
+        .firsthalf{
+            display: none;
+        }
+
+        .secondhalf{
+            display: none;
+        }
+
+        .mobile{
+            width: 100%;
+            max-height: 100vh;
+        
+        }
+
+        .mobile .header{
+            font-size: larger;
+            font-weight: 100;
+            color: black;
+            margin-left:2%;
+            font-family: 'Pacifico', cursive;
+            cursor: pointer;
+            user-select: none;
+            width: fit-content;
+        }
+
+        .mobile .header:hover{
+            color: rgb(39, 124, 163);
+        }
+        
+        .mobile .navbar ul li a{
+            text-decoration:none;
+            color: rgb(82, 4, 155);
+        }
+
+
+        .mobile .navbar nav ul li a:hover{
+                background-color: rgb(39, 124, 163); 
+                color: black;
+                transition: 0.3s ease-in;
+            
+            }
+        .mobile .ml12{
+             color: rgb(232, 240, 239);
+        }
+        
+}
+
+
+
+@media only screen and (min-width:800px) {
+    .mobile{
+        display: none;
+    }
+
+}

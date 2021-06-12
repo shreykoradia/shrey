@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@100&display=swap');;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    max-height: 100vh;
+    
+}
+
+.social-media{
+    margin-top: 10%;
+    display: grid;
+    background-color: none;
+    grid-row-gap:2rem ;
+   
+}
+
+.social-media a {
+    font-size: 3rem;
+    color:rgb(39, 124, 163);
+    
+}
+
+.social-media a:hover{
+    box-shadow: 1px 1px 1px 1px rgb(108, 50, 214) , 0px -1px 1px 0px rgb(243, 8, 231) ;
+    border-radius: 50% ;
+    background: none;
+    transition: 0.5s ease-in-out;
+}
+
+
+#footer{
+
+    position: fixed;
+    width: fit-content;
+    height: auto;
+    left: 1%;
+    bottom: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    color: whitesmoke;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+#footer:hover{
+    color:rgb(39, 124, 163);
+    text-shadow: 2px -2px rgb(243, 8, 231);
+}
