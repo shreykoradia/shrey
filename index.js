@@ -5,7 +5,7 @@ const app = express();
 // creating a public folder for static files !
 app.use(express.static(path.join(__dirname , 'public')));
 
-const port = 3010 || process.env.port ;
+const port =  Process.env.port || 3010 ;
 
 app.get('/' , (req , res)=>{
   res.sendFile('/public/index.html' , {root : __dirname} );
